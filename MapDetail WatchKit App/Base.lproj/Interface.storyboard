@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="s2O-dk-SSK">
+                            <items>
+                                <button width="0.5" alignment="left" title="Apple" id="LZ9-7L-Bk5">
+                                    <connections>
+                                        <action selector="goToApple" destination="AgC-eL-Hgc" id="g8K-Hi-kni"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Tokyo" id="hoK-8O-Hjc">
+                                    <connections>
+                                        <action selector="goToTokyo" destination="AgC-eL-Hgc" id="Cdr-Lm-ICM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="EqF-Su-Bqe">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" title="In" id="oww-QN-YYK">
+                                    <connections>
+                                        <action selector="zoomIn" destination="AgC-eL-Hgc" id="qLi-gZ-bBT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" title="Out" id="6Kd-Vj-6RR">
+                                    <connections>
+                                        <action selector="zoomOut" destination="AgC-eL-Hgc" id="Ps5-pb-6ZK"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <map width="1" height="1" alignment="center" id="Nke-Lv-Y9R"/>
+                        <group width="1" alignment="left" id="wIC-nx-Oe4">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" title="Pins" id="Woo-3u-e4V">
+                                    <connections>
+                                        <action selector="addPinAnnotations" destination="AgC-eL-Hgc" id="WKh-m9-p1t"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" title="Images" id="1YR-w5-INj">
+                                    <connections>
+                                        <action selector="addImageAnnotations" destination="AgC-eL-Hgc" id="Mq6-59-e84"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Remove All" id="aqn-A9-JaX" userLabel="Remove All">
+                            <connections>
+                                <action selector="removeAll" destination="AgC-eL-Hgc" id="kvK-as-5Jk"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="appleButton" destination="LZ9-7L-Bk5" id="Re2-QQ-neb"/>
+                        <outlet property="imagesButton" destination="1YR-w5-INj" id="xkY-3j-XJg"/>
+                        <outlet property="inButton" destination="oww-QN-YYK" id="TZT-oY-x53"/>
+                        <outlet property="map" destination="Nke-Lv-Y9R" id="yu6-h3-OSf"/>
+                        <outlet property="outButton" destination="6Kd-Vj-6RR" id="PtK-Vo-aOJ"/>
+                        <outlet property="pinsButton" destination="Woo-3u-e4V" id="CSR-Mf-9sy"/>
+                        <outlet property="removeAllButton" destination="aqn-A9-JaX" id="nyR-TE-DK7"/>
+                        <outlet property="tokyoButton" destination="hoK-8O-Hjc" id="peV-Nd-9pv"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="285.5"/>
+        </scene>
+    </scenes>
+</document>
